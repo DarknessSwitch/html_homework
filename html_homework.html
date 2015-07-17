@@ -1,0 +1,158 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.headerImage
+			{
+				border-style : solid;
+				border-width : 0 3px 0 0;
+				border-color : #ff9999
+			}
+			.header
+			{
+				display : flex;
+				align-items : center;
+				
+				border-style : solid;
+				border-width : 3px;
+			}
+			.main
+			{
+				display : inline-flex;
+				
+				border-width : 7px;
+				border-style : solid;
+				border-color : yellow;
+			}
+			.menu
+			{
+				min-width : 200px;
+				text-align : left;
+				
+				background : pink;
+				border-width : 3px 3px 3px 3px;
+				border-style : solid;	
+			}
+			.menu ul
+			{		
+				list-style-type : none;
+				padding : 0 0 0 0;
+				margin : 0;
+			}
+			.menu li
+			{			
+				border-width : 1px 1px 1px 0;
+				border-style : solid;
+				border-color : green;
+			}
+			.content
+			{
+				display : inline-block;
+				text-align : center;
+			}
+			.contentBlock
+			{
+				text-align : center;
+				display : inline-block;
+				width : 70px;
+				padding : 25px;  <!-- padding for content blocks added just to display center alignment -->
+				
+				border-width : 2px;
+				border-style : solid;
+				border-color : red;
+			}
+			.contentBlockData
+			{
+				position : relative;
+				top : 50%;	
+				display : inline;
+				transform : translateY(-50%);
+			}
+			.bottom
+			{
+				text-align : center;
+				
+				margin-top : 6px;
+				border-width : 2px;
+				border-style : solid;
+				border-color : red;
+			}
+			.bottomContent
+			{			
+				position : relative;
+				top : 50%;
+				display : inline;
+				transform : translate(0,-50%);
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="header">		
+			<div class="headerImage">
+				<img src="http://vk.com/images/stickers/93/128.png" alt="cat image" >
+			</div>
+			<div class="headerText">
+				Some header text (header height not fixed, equals the image's original size)
+			</div>
+		</div>
+		
+		<div class="main">
+			<div class="menu">
+				<ul>
+					<li>Menu item 1</li>
+					<li>Menu item 2</li>
+					<li>Menu item 3</li>
+				</ul>
+			</div>
+			
+			<div class="content">
+			
+				<div class="contentBlock">
+					<div class="contentBlockData">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					</div>
+				</div>
+				<div class="contentBlock">
+					<div class="contentBlockData">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					</div>
+				</div>
+				<div class="contentBlock">
+					<div class="contentBlockData">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					</div>
+				</div>
+				<div class="contentBlock">
+					<div class="contentBlockData">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					</div>
+				</div>
+				<div class="contentBlock">
+					<div class="contentBlockData">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					</div>
+				</div>
+				<div class="contentBlock">
+					<div class="contentBlockData">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					</div>
+				</div>
+				<div class="contentBlock">
+					<div class="contentBlockData">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+		
+		<div class="bottom">
+			<div class = "bottomContent">
+				Bottom content (height not fixed)
+			</div>
+		</div>
+
+	</body>
+</html>
